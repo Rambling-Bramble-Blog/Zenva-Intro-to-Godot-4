@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dxmdsc1t0tto3"]
+
+[ext_resource type="Texture2D" uid="uid://bnbjwa3hoirr6" path="res://assets/sprites/Player.png" id="1_yk4to"]
+
+[resource]
+depth_draw_mode = 1
+albedo_color = Color(0.69411767, 0.3764706, 0.5137255, 1)
+albedo_texture = ExtResource("1_yk4to")
+metallic_specular = 0.65
+roughness = 0.8
