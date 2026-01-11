@@ -1,0 +1,66 @@
+[gd_scene load_steps=4 format=3 uid="uid://bnh4bxft5512p"]
+
+[ext_resource type="PackedScene" uid="uid://badsheb5jt2jn" path="res://scenes/player.tscn" id="1_0wfyh"]
+[ext_resource type="Texture2D" uid="uid://bnbjwa3hoirr6" path="res://assets/sprites/Player.png" id="1_o5qli"]
+[ext_resource type="PackedScene" uid="uid://dqq3juyflfp31" path="res://scenes/coin.tscn" id="2_0wfyh"]
+
+[node name="MainRoot" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_0wfyh")]
+position = Vector2(80, 568)
+
+[node name="Coin" parent="." instance=ExtResource("2_0wfyh")]
+position = Vector2(203, 579)
+
+[node name="Coin2" parent="." instance=ExtResource("2_0wfyh")]
+position = Vector2(503, 579)
+
+[node name="Coin3" parent="." instance=ExtResource("2_0wfyh")]
+position = Vector2(703, 579)
+
+[node name="Coin4" parent="." instance=ExtResource("2_0wfyh")]
+position = Vector2(603, 579)
+
+[node name="Coin5" parent="." instance=ExtResource("2_0wfyh")]
+position = Vector2(403, 579)
+
+[node name="Coin6" parent="." instance=ExtResource("2_0wfyh")]
+position = Vector2(303, 579)
+
+[node name="Player2" type="Sprite2D" parent="."]
+position = Vector2(-696, 288)
+texture = ExtResource("1_o5qli")
+
+[node name="Player5" type="Sprite2D" parent="."]
+position = Vector2(-641.00006, 364)
+rotation = 2.3561945
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_o5qli")
+
+[node name="Player6" type="Sprite2D" parent="."]
+position = Vector2(-751.00006, 364)
+rotation = -2.3561945
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_o5qli")
+
+[node name="Player7" type="Sprite2D" parent="."]
+position = Vector2(-751.00006, 215.00002)
+rotation = -0.7853982
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_o5qli")
+
+[node name="Player8" type="Sprite2D" parent="."]
+position = Vector2(-640.99994, 215.00002)
+rotation = 0.7853982
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_o5qli")
+
+[node name="Player3" type="Sprite2D" parent="."]
+position = Vector2(-631, 288)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("1_o5qli")
+
+[node name="Player4" type="Sprite2D" parent="."]
+position = Vector2(-761, 288)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("1_o5qli")

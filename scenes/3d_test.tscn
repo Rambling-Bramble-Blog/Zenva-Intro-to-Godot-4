@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://dtodm3hfreqc3"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_d3qdn"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_d3qdn"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_kdbrx"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_ciecv"]
+
+[node name="3DTestRoot" type="Node3D"]
+
+[node name="Snowman" type="Node3D" parent="."]
+
+[node name="Arms" type="MeshInstance3D" parent="Snowman"]
+transform = Transform3D(0.15, 0, 0, 0, 0.05, 0, 0, 0, 1.2970371, 0, 0.65533805, 0)
+mesh = SubResource("BoxMesh_d3qdn")
+skeleton = NodePath("../..")
+
+[node name="Head" type="MeshInstance3D" parent="Snowman"]
+transform = Transform3D(0.45, 0, 0, 0, 0.45, 0, 0, 0, 0.45, 0, 1, 0)
+mesh = SubResource("SphereMesh_d3qdn")
+skeleton = NodePath("../Arms")
+
+[node name="Torso" type="MeshInstance3D" parent="Snowman"]
+transform = Transform3D(0.65, 0, 0, 0, 0.65, 0, 0, 0, 0.65, 0, 0.57853913, 0)
+mesh = SubResource("SphereMesh_kdbrx")
+skeleton = NodePath("../Arms")
+
+[node name="Bottom" type="MeshInstance3D" parent="Snowman"]
+mesh = SubResource("SphereMesh_ciecv")
+skeleton = NodePath("../Arms")

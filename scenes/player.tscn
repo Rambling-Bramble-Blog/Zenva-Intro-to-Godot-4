@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://badsheb5jt2jn"]
+
+[ext_resource type="Texture2D" uid="uid://bnbjwa3hoirr6" path="res://assets/sprites/Player.png" id="1_3vyb7"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3vyb7"]
+radius = 8.394478
+height = 28.412218
+
+[node name="Player" type="Sprite2D"]
+self_modulate = Color(0.56683046, 0.9999998, 0.96078366, 1)
+texture = ExtResource("1_3vyb7")
+
+[node name="Player" type="Sprite2D" parent="."]
+modulate = Color(0, 0, 0, 0.40392157)
+z_index = -1
+position = Vector2(43, 38)
+skew = 1.4014994
+texture = ExtResource("1_3vyb7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+scale = Vector2(3.9311554, 3.378828)
+shape = SubResource("CapsuleShape2D_3vyb7")
