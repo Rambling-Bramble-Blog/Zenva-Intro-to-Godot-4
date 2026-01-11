@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://dtodm3hfreqc3"]
+[gd_scene load_steps=12 format=3 uid="uid://dtodm3hfreqc3"]
 
 [ext_resource type="Material" uid="uid://dxmdsc1t0tto3" path="res://materials/my_first_material.tres" id="1_kdbrx"]
 [ext_resource type="Material" uid="uid://copdq2sr772ws" path="res://materials/player_mat.tres" id="2_ciecv"]
@@ -15,6 +15,8 @@
 [sub_resource type="SphereMesh" id="SphereMesh_ciecv"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_nyheh"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_js724"]
 
 [node name="3DTestRoot" type="Node3D"]
 
@@ -65,3 +67,28 @@ skeleton = NodePath("../MeshInstance3D2")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.5)
 material_override = ExtResource("2_ciecv")
 mesh = SubResource("SphereMesh_nyheh")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="."]
+transform = Transform3D(3.8595254, 0, 0, 0, 0.15, 0, 0, 0, 11.757243, 0, -0.65, 0)
+mesh = SubResource("BoxMesh_js724")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.640646, 0.76783645, 0, -0.76783645, 0.640646, 0, 2.62311, 5.483721)
+visible = false
+light_color = Color(0.87946236, 0.865716, 0.6439469, 1)
+light_energy = 0.11
+shadow_enabled = true
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.640646, 0.76783645, 0, -0.76783645, 0.640646, 1.4661827, 0.21461225, -0.06198597)
+visible = false
+light_color = Color(0.3575972, 0.5817596, 0.27576303, 1)
+light_energy = 7.433
+shadow_enabled = true
+distance_fade_enabled = true
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.8295838, 0.55838233, 0, -0.55838233, 0.8295838, 0, 2.62311, 5.483721)
+light_energy = 7.765
+shadow_enabled = true
+spot_range = 16.574875
