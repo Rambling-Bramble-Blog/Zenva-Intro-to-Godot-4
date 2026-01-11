@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bnbjwa3hoirr6" path="res://assets/sprites/Player.png" id="1_o5qli"]
 [ext_resource type="PackedScene" uid="uid://dqq3juyflfp31" path="res://scenes/coin.tscn" id="2_0wfyh"]
 
-[node name="MainRoot" type="Node2D"]
+[node name="Main_Root" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_0wfyh")]
 position = Vector2(80, 568)
