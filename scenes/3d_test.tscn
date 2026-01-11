@@ -81,7 +81,6 @@ shadow_enabled = true
 
 [node name="OmniLight3D" type="OmniLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.640646, 0.76783645, 0, -0.76783645, 0.640646, 1.4661827, 0.21461225, -0.06198597)
-visible = false
 light_color = Color(0.3575972, 0.5817596, 0.27576303, 1)
 light_energy = 7.433
 shadow_enabled = true
@@ -92,3 +91,7 @@ transform = Transform3D(1, 0, 0, 0, 0.8295838, 0.55838233, 0, -0.55838233, 0.829
 light_energy = 7.765
 shadow_enabled = true
 spot_range = 16.574875
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.9945014, -0.104682684, 0.0029511766, 0.048253667, 0.48306385, 0.8742546, -0.09294493, -0.86930484, 0.48545897, -0.5789714, 2.440892, 4.250329)
+fov = 104.86305

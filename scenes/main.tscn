@@ -64,3 +64,7 @@ texture = ExtResource("1_o5qli")
 position = Vector2(-761, 288)
 scale = Vector2(0.75, 0.75)
 texture = ExtResource("1_o5qli")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(224, 522)
+zoom = Vector2(3, 3)
