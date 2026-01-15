@@ -59,29 +59,29 @@ var game_over : bool = false
 
 var count : int = 0
 
-func _ready():
-	print("Ready!")
-	_welcome_message()
-	print(_add(5,47))
-	print(_has_won(124))
+#func _ready():
+	#print("Ready!")
+	#_welcome_message()
+	#print(_add(5,47))
+	#print(_has_won(124))
 
-func _process(delta):
+#func _process(delta):
 	#count += 1
 	#print(count)
-	pass
+	#pass
 	
-func _welcome_message(): # private functions get "_" before name
-#	private functions are accessed only in the script it is made in.
-	print("Welcome to the Game!")
-	
-func _add(a : float, b : float) -> float: # -> defines the return type, while the colons define the argument types.
-	var sum : float = a + b
-	return sum
+#func _welcome_message(): # private functions get "_" before name
+##	private functions are accessed only in the script it is made in.
+	#print("Welcome to the Game!")
+	#
+#func _add(a : float, b : float) -> float: # -> defines the return type, while the colons define the argument types.
+	#var sum : float = a + b
+	#return sum
 
 # Challenge : Lesson 44 - Functions Part 2 :
 
-func _has_won(score):
-	if score > 100:
-		return true
-	else:
-		return false
+#func _has_won(score):
+	#if score > 100:
+		#return true
+	#else:
+		#return false
